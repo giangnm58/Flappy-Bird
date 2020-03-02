@@ -207,6 +207,7 @@ def playGame():
     sess = tf.InteractiveSession()
     s, readout, h_fc1 = createNetwork()
     trainNetwork(s, readout, h_fc1, sess)
+    sess.close()
 
 def main():
     playGame()
